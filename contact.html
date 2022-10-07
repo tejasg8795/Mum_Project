@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kite+One&family=Lobster&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Playball&family=Poppins:ital,wght@0,700;1,600&family=Roboto&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./Images/Mumbai-Universitylogo33-removebg-preview.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa-solid fa-xmark fa_1" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa_1" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <!-- Contact us -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.0443888042364!2d72.82878991437462!3d18.929429261483453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c31de0a5d9%3A0x7a593c99f631b64f!2sUniversity%20Of%20Mumbai!5e0!3m2!1sen!2sin!4v1664188330233!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact_us_1">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house fa_3"></i>
+                    <span>
+                        <h5>Mahatma Gandhi Road</h5>
+                        <p>Fort, Mumbai, Maharashtra</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone fa_3"></i>
+                    <span>
+                        <h5>022 22708700</h5>
+                        <p>Monday-Saturday, 10AM - 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope fa_3"></i>
+                    <span>
+                        <h5>info@mumuniversity.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" name="" placeholder="Enter your name" required>
+                    <input type="email" name="" placeholder="Enter your email" required>
+                    <input type="text" name="" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="'submit" class="small_btn red_btn">Send message</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+            Universities in India</br>
+            It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the first
+            three Universities in India</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f fa_3"></i>
+            <i class="fa-brands fa-twitter fa_3"></i>
+            <i class="fa-brands fa-linkedin fa_3"></i>
+            <i class="fa-brands fa-instagram fa_3"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart fa_4"></i> by easy tutorials</p>
+
+    </section>
+
+    <!-- //------Javascript for Toggle Menu------/ -->
+    <script type="text/javascript">
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+
+
+        }
+        function hideMenu() {
+
+            navLinks.style.right = "-200px";
+            // navLinks.style.opacity ="0";
+            navLinks.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

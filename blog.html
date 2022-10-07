@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kite+One&family=Lobster&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Playball&family=Poppins:ital,wght@0,700;1,600&family=Roboto&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./Images/Mumbai-Universitylogo33-removebg-preview.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa-solid fa-xmark fa_1" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa_1" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>Our Certificate & Online Programs</h1>
+
+    </section>
+
+
+    <!-- Blog page content -->
+    <section class="blog_content">
+        <div class="row">
+            <div class="blog_left">
+                <div class="blog-left-col">
+                    <img src="./Images/certificate.jpg">
+                    <div class="layer_1">
+                        <!-- <h3>Mum</h3> -->
+                    </div>
+
+                </div>
+                <h2>Our Certificate & Online Programs</h2>
+                <p>The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+                    Universities in India.
+                    It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the
+                    first three Universities in India.</p>
+                </br>
+                <p>
+                    The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+                    Universities in India.
+                    It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the
+                    first three Universities in India. As a sequel to the change in the name of the city from Bombay to
+                    Mumbai, the name of the University has been changed from “University of Bombay” to “University of
+                    Mumbai”, vide notification issued by the Government of Maharashtra and published in the Government
+                    Gazette dated 4th September, 1996.The University was accorded 5 star status in 2001</p>
+                </br>
+                <p>
+                    The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+                    Universities in India.
+                    It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the
+                    first three Universities in India. As a sequel to the change in the name of the city from Bombay to
+                    Mumbai, the name of the University has been changed from “University of Bombay” to “University of
+                    Mumbai”, vide notification issued by the Government of Maharashtra and published in the Government
+                    Gazette dated 4th September, 1996.The University was accorded 5 star status in 2001</p>
+                <br>
+                <p>The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+                    Universities in India.
+                    It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the
+                    first three Universities in India.</p>
+
+                <div class="comment_box">
+                    <h3>Leave comments</h3>
+                    <form class="comment_form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows='5' placeholder="Your Comment"></textarea>
+                        <button type="submit" class="small_btn red_btn">
+                            POST COMMENT</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div class="blog_right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>AutoCad</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>27</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>38</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>The University of Mumbai (known earlier as University of Bombay) is one of the oldest and premier
+            Universities in India</br>
+            It was established in 1857 consequent upon “Wood’s Education Dispatch”, and it is one amongst the first
+            three Universities in India</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f fa_3"></i>
+            <i class="fa-brands fa-twitter fa_3"></i>
+            <i class="fa-brands fa-linkedin fa_3"></i>
+            <i class="fa-brands fa-instagram fa_3"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart fa_4"></i> by easy tutorials</p>
+
+    </section>
+
+    <!-- //------Javascript for Toggle Menu------/ -->
+    <script type="text/javascript">
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+
+
+        }
+        function hideMenu() {
+
+            navLinks.style.right = "-200px";
+            // navLinks.style.opacity ="0";
+            navLinks.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
